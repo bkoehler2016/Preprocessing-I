@@ -162,6 +162,8 @@ body {
   flex-direction: row;
   background: lightgrey;
   margin: 2rem;
+  width: 800px;
+  margin: 0 auto;
 }
 .topSection .teamUp {
   background-color: #1a17179a;
@@ -196,15 +198,22 @@ body {
 .bottomSection {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 20px;
+  align-items: flex-start;
 }
 .bottomSection .paragrpah {
-  display: flex;
-  flex-flow: row wrap;
+  text-align: left;
 }
 .bottomSection h2 {
   font-size: 2rem;
+}
+.bottomSection .skillItems li {
+  margin: 20px;
+  padding: 20px 10;
+}
+.workHistory {
+  display: flex;
 }
 .workHistory #customers {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
