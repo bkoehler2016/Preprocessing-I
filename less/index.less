@@ -146,6 +146,14 @@ body {
 }
 
 @backgroundBlue: dodgerblue;
+@font-size: 2rem;
+@border-radius: 8px;
+@display: flex;
+@justify-content: space-between;
+@flex-direction-row: row;
+@flex-direction-column: column;
+@margin: 20px;
+
 
 
 
@@ -153,7 +161,7 @@ body {
 	width: 800px;
 	margin: 50px auto;
 
-	@media (max-width: 800px) {
+	@media (max-width: 500px) {
 		width: 100%;
 		padding: 20px;
 	}
@@ -173,4 +181,106 @@ body {
 			}
 		}
 	}
+}
+
+.topSection {
+	display: @display;
+	flex-direction: @flex-direction-row;
+	background: lightgrey;
+	// border: 2px solid black;
+	margin: 2rem;
+
+	.teamUp {
+		background-color: #1a17179a;
+		/* Green */
+		padding: 20px;
+		margin: @margin;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 16px;
+	}
+
+	p {
+		margin: @margin;
+	}
+
+	img {
+		display: @display;
+		flex-direction: @flex-direction-row;
+		padding: 20px;
+
+	}
+
+	div {
+		margin: @margin;
+	}
+
+	h1 {
+		display: @display;
+		flex-direction: @flex-direction-row;
+		font-size: @font-size;
+		margin: @margin;
+	}
+}
+
+.bottomSection {
+	display: @display;
+	flex-direction: @flex-direction-row;
+	justify-content: @justify-content;
+	margin: @margin;
+
+	.paragrpah {
+		display: @display;
+		flex-flow: row wrap;
+
+	}
+
+	h2 {
+		font-size: @font-size;
+	}
+
+}
+
+.workHistory {
+	// display: @display;
+
+	#customers {
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+		border-collapse: collapse;
+		width: 100%;
+
+		td {
+			border: 1px solid #dddddd;
+			padding: 8px;
+		}
+
+		th {
+			border: 1px solid #dddddd;
+			padding: 8px;
+		}
+
+		tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+
+		tr:hover {
+			background-color: #dddddd;
+		}
+
+		th {
+			padding-top: 12px;
+			padding-bottom: 12px;
+			text-align: left;
+			background-color: #4caf50;
+			color: white;
+		}
+	}
+}
+
+footer {
+	text-align: center;
 }
