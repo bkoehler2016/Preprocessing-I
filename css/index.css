@@ -161,7 +161,7 @@ body {
   background: dodgerblue;
 }
 .container header .mainNav a:hover {
-  color: #b87d11;
+  background-color: #b87d11;
 }
 .container .topSection {
   display: flex;
