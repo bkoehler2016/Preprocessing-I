@@ -153,8 +153,10 @@ body {
 @flex-direction-row: row;
 @flex-direction-column: column;
 @margin: 20px;
+@marginCenter: 0 auto;
 @align-items: flex-start;
 @width: 800px;
+@tableColor: #dddddd;
 
 
 
@@ -192,7 +194,7 @@ body {
     // border: 2px solid black;
     margin: 2rem;
     width: @width;
-    margin: 0 auto;
+    margin: @marginCenter;
 
     .teamUp {
         background-color: #1a17179a;
@@ -236,7 +238,7 @@ body {
     display: @display;
     flex-direction: @flex-direction-row;
     justify-content: @justify-content;
-    margin: @margin;
+    margin: @marginCenter;
     align-items: @align-items;
 
     .paragrpah {
@@ -263,13 +265,13 @@ body {
         width: 100%;
 
         td {
-            border: 1px solid #dddddd;
+            border: 1px solid @tableColor;
             padding: 8px;
+            margin: @marginCenter;
         }
 
         th {
-            border: 1px solid #dddddd;
-            padding: 8px;
+            td();
         }
 
         tr:nth-child(even) {
