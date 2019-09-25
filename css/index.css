@@ -1,1 +1,277 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.container {
+  width: 800px;
+  margin: 50px auto;
+}
+.container header {
+  width: 100%;
+}
+.container header .mainNav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.container header .mainNav a {
+  color: dodgerblue;
+  margin: 0 10px;
+  border: 1px solid lightgray;
+  padding: 20px;
+  display: flex;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 20px;
+  /*======= create a background property. Set the value to #F87B99 */
+  background: dodgerblue;
+}
+.container header .mainNav a:hover {
+  background-color: #b87d11;
+}
+.container .topSection {
+  display: flex;
+  flex-direction: row;
+  background: lightgrey;
+  margin: 2rem;
+  width: 800px;
+  margin: 0 auto;
+}
+.container .topSection .teamUp {
+  background-color: #1a17179a;
+  /* Green */
+  padding: 20px;
+  margin: 20px;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.container .topSection p {
+  margin: 20px;
+}
+.container .topSection img {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+.container .topSection div {
+  margin: 20px;
+}
+.container .topSection h1 {
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  margin: 20px;
+}
+.container .bottomSection {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+@media (max-width: 500px) {
+  .container .bottomSection .bottomSection {
+    display: flex;
+    flex-direction: row;
+    margin: 500px;
+  }
+}
+.container .bottomSection .bottomSectionItem {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 25px;
+}
+.container .bottomSection .paragrpah {
+  font-size: 20px;
+  line-height: 28px;
+}
+.container .bottomSection h2 {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+.container .bottomSection .skillItems {
+  width: 100%;
+}
+.container .bottomSection .skillItems li {
+  display: flex;
+  justify-content: flex-start;
+  padding: 12px 30px;
+  border: 1px solid black;
+  font-size: 17px;
+}
+.container .workHistory {
+  display: flex;
+}
+.container .workHistory #customers {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.container .workHistory #customers td {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  margin: 0 auto;
+}
+.container .workHistory #customers th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  margin: 0 auto;
+}
+.container .workHistory #customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.container .workHistory #customers tr:hover {
+  background-color: #dddddd;
+}
+.container .workHistory #customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: dodgerblue;
+  color: white;
+}
+footer {
+  margin-top: 10px;
+  text-align: center;
+}

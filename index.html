@@ -1,19 +1,108 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
-  <title>My Resume</title>
+    <title>Ben Koehler Resume</title>
 
-  <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css" />
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
-</head>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-<body>
-  <h1>My Resume</h1>
-</body>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="mainNav">
+          <a class="navItem" href="#">Home</a>
+          <a class="navItem" href="#">About</a>
+          <a
+            class="navItem"
+            target="_blank"
+            href="https://benkoehler.info/#portfolio"
+            >Portfolio</a
+          >
+          <a class="navItem" href="mailto:bkoehler751@icloud.com">Contact</a>
+        </nav>
+      </header>
+
+      <section class="topSection">
+        <div>
+          <img
+            class="profliePic"
+            src="/img/profile_pic.jpg"
+            alt="Ben Koehler Profile pic"
+          />
+          <h1>Ben Koehler - Web Dev</h1>
+          <div>I love to code.</div>
+
+          <p>
+            A creative, engaging, Full Stack developer with a passion for
+            front-end development and UX Design. Who specializes in customer
+            satisfaction through teamwork and maintains a commitment to exceed
+            expectations. Actively pursuing opportunities to provide programming
+            skills, leadership ability, and enthusiasm to a fast-paced
+            environment as a Full Stack Developer.
+          </p>
+          <form action="https://benkoehler.info/#contact">
+            <input type="submit" class="teamUp" value="Let's Team Up" />
+          </form>
+        </div>
+      </section>
+
+      <section class="bottomSection">
+        <div class="bottomSectionItem">
+          <h2>Listen Up...</h2>
+          <br />
+          <div class="paragraph">
+            <p>
+              I am a current student at Lambda School who is eager to learn and
+              start making front end sites with HTML and CSS.
+            </p>
+          </div>
+        </div>
+
+        <div class="bottomSectionItem">
+          <h2>Stuff I'm good At:</h2>
+          <ul class="skillItems">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>LESS PreProcesser</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="workHistory">
+        <table id="customers">
+          <tr>
+            <th>Time at Company</th>
+            <th>Company</th>
+            <th>Title</th>
+          </tr>
+          <tr>
+            <td>12 years</td>
+            <td>Godaddy</td>
+            <td>Tech Support</td>
+          </tr>
+          <tr>
+            <td>6 months</td>
+            <td>Voya</td>
+            <td>Customer Service</td>
+          </tr>
+          <tr>
+            <td>4 months</td>
+            <td>PSCU</td>
+            <td>Fraud Detection</td>
+          </tr>
+        </table>
+      </section>
+
+      <footer>
+        Copyright Ben Koehler 2019
+      </footer>
+    </div>
+  </body>
 </html>
