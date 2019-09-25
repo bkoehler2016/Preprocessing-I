@@ -146,7 +146,7 @@ body {
 }
 
 @backgroundBlue: dodgerblue;
-@colorLightGray: lightgrey;
+@colorLightGray: #b87d11;
 @font-size: 2rem;
 @border-radius: 8px;
 @display: flex;
@@ -179,8 +179,16 @@ body {
 
             a {
                 color: @backgroundBlue;
-                font-size: 1.3rem;
+                margin: 0 10px;
+                border: 1px solid lightgray;
+                padding: 20px;
+                display: @display;
+                border-radius: 20px;
+                color: white;
                 text-decoration: none;
+                margin-bottom: 20px;
+                /*======= create a background property. Set the value to #F87B99 */
+                background: @backgroundBlue;
             }
 
             a:hover {

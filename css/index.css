@@ -149,11 +149,19 @@ body {
 }
 .container header .mainNav a {
   color: dodgerblue;
-  font-size: 1.3rem;
+  margin: 0 10px;
+  border: 1px solid lightgray;
+  padding: 20px;
+  display: flex;
+  border-radius: 20px;
+  color: white;
   text-decoration: none;
+  margin-bottom: 20px;
+  /*======= create a background property. Set the value to #F87B99 */
+  background: dodgerblue;
 }
 .container header .mainNav a:hover {
-  color: lightgrey;
+  color: #b87d11;
 }
 .container .topSection {
   display: flex;
