@@ -165,14 +165,7 @@ body {
     width: 800px;
     margin: 50px auto;
 
-    @media (max-width: 500px) {
-        .bottomSection {
-            display: @display;
-            flex-direction: @flex-direction-column;
-            width: 500px;
-            margin: auto;
-        }
-    }
+
 
     header {
         width: 100%;
@@ -243,6 +236,14 @@ body {
         display: @display;
         justify-content: space-between;
         margin-bottom: 15px;
+
+        @media (max-width: 500px) {
+            .bottomSection .bottomSectionItem {
+                display: @display;
+                flex-direction: @flex-direction-row;
+                margin: 500px;
+            }
+        }
 
         .bottomSectionItem {
             width: 48%;
